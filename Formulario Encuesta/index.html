@@ -1,0 +1,49 @@
+Cerfiticacion1
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <h1 id="title"> Formulario Encuesta</h1>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <p id="description"> Formulario encuesta con el fin de censar las orientaciones politicas en Argentina</p>
+    <form id="survey-form">
+    <label id="name-label">Nombre y Apellido: <input id="name" type="text" placeholder="Nombre Completo" required> </label>
+    <label id="email-label">Email: <input id="email" type="email" pattern="[a-z0-5]{8,}" placeholder="Email" required></label>
+    <label id="number-label">Telefono: <input id="number" type="number" pattern="[0-9]{8,19}" min="0" max= "9" placeholder= "Numero de telefono" required></label>
+    <fieldset>
+        <legend>Seleccione una orientacion politica</legend>
+        <label><input name="partido" value="radicalismo" type="radio" checked>Radicalismo
+        <input name="partido" value="peronismo"  type="radio">Peronismo
+        <input name="partido" value="otro" type="radio">Otro</label>
+        <label><textarea name="partido" value="Nombre otro" placeholder="Especifique cual partido"></textarea></label>
+    </fieldset>
+    <fieldset>
+        <legend>¿Conoce sobre la Ley Omnibus?</legend>
+        <select id="dropdown">
+        <option value="">(Seleccione una opcion)</option>
+        <option value="si"> Si </option>
+        <option value="no"> No </option>
+        </select>
+        <label><input value="acuerdo" type="checkbox">De acuerdo</label>
+        <label><input value="desacuerdo" type="checkbox">En desacuerdo</label>
+        <label><input value="desinteres" type="checkbox">No me interesa</label>
+        
+    </fieldset>
+    <fieldset id="solucion">
+        <legend>¿Como solucionaria los disturbios fuera del congreso?</legend>
+        <label><input value="manifestar" type="checkbox">Permitir la manifestacion</label>
+        <label><input value="cortar" type="checkbox">Permitir el corte de calles</label>
+        <label><input class= "inline" value="reprimir" type="checkbox">Reprimir</label>
+        <label><input class= "inline" value="sacar" type="checkbox">Sacarlos de la calle</label>
+        <label><input class= "inline" value="camion" type="checkbox">Usar los camiones hidrantes</label>
+    </fieldset>
+    <label><textarea id="observaciones" placeholder="Observaciones"></textarea></label>
+    <button type="submit" id="submit">Enviar</button>
+    </form>
+
+</body>
+
+
